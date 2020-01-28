@@ -14,7 +14,7 @@
         <activity android:name=".ViewIncomeBudget" />
         <activity android:name=".ViewMiscExpences" />
         <activity android:name=".ViewTransportationExpences" />
-        <activity android:name=".ViewLivingExpences" />
+        <activity android:name=".ViewLivingExpenses" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

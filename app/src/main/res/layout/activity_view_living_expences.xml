@@ -1,9 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewLivingExpences">
+    tools:context=".ViewLivingExpenses">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TableLayout
+        android:id="@+id/layout_livingExpenses"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:stretchColumns="1">
+
+    <TableRow>
+
+        <LinearLayout
+            android:id="@+id/titleBar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:fontFamily="comic-sans"
+                android:layout_marginRight="5dp"
+                android:text="Paid So Far:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/payment_rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:fontFamily="comic-sans"
+                android:text="00/00/0000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Back" />
+
+        </LinearLayout>
+    </TableRow>
+
+        <TableRow>
+        <TableLayout
+        android:id="@+id/item_listTitles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:stretchColumns="3">
+
+        <TableRow>
+
+            <TextView android:text="Item" />
+
+            <TextView android:text="Modifier" />
+
+            <TextView android:text="Date Updated" />
+
+            <TextView android:text="Total" />
+        </TableRow>
+
+
+
+    </TableLayout>
+        </TableRow>
+
+        <TableRow>
+            <TableLayout
+                android:id="@+id/item_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:stretchColumns="3">
+
+                <TableRow>
+
+                    <TextView android:text="Item" />
+
+                    <TextView android:text="Modifier" />
+
+                    <TextView android:text="Date Updated" />
+
+                    <TextView android:text="Total" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="test" />
+                </TableRow>
+
+
+            </TableLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:id="@+id/item_info"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:gravity="left"
+
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="250dp" />
+
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+
