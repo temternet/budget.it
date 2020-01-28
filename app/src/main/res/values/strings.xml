@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">budget.it</string>
     <string name="action_settings">Settings</string>
+    <string name="vertical">Vertical Layout</string>
+    <string name="horizontal">Horizontal Layout</string>
+    <string name="customHorizontal">Custom Horizontal Layout</string>
 </resources>
