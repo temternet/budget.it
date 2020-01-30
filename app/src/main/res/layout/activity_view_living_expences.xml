@@ -23,6 +23,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="left"
+            android:background="#ffff2222"
             android:orientation="horizontal"
             android:padding="5dp">
 
@@ -41,14 +42,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|right"
                 android:fontFamily="comic-sans"
-                android:text="00/00/0000"
+                android:text="£325.00"
                 android:textSize="20dp" />
 
             <Button
                 android:id="@+id/btn_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="center|right"
                 android:text="Back" />
 
         </LinearLayout>
@@ -67,11 +68,14 @@
 
         <TableRow>
 
-            <TextView android:text="Item" />
+            <TextView android:text="Item"
+                android:layout_marginRight="89dp"/>
 
-            <TextView android:text="Modifier" />
+            <TextView android:text="Modifier"
+                android:layout_marginRight="45dp"/>
 
-            <TextView android:text="Date Updated" />
+            <TextView android:text="Date Updated"
+                android:layout_marginRight="30dp"/>
 
             <TextView android:text="Total" />
         </TableRow>
@@ -94,18 +98,68 @@
 
                 <TableRow>
 
-                    <TextView android:text="Item" />
+                    <TextView android:text="Rent" />
 
-                    <TextView android:text="Modifier" />
+                    <TextView android:text="n/a" />
 
-                    <TextView android:text="Date Updated" />
+                    <TextView android:text="12/01/2020" />
 
-                    <TextView android:text="Total" />
+                    <TextView android:text="£250.00" />
                 </TableRow>
 
                 <TableRow>
 
-                    <TextView android:text="test" />
+                    <TextView
+                        android:text="Gas &amp; Electric"
+                        android:layout_marginRight="30dp"/>
+
+                    <TextView android:text="£15 rebate"
+                        android:layout_marginRight="30dp"/>
+
+                    <TextView android:text="26/01/2020" />
+
+                    <TextView android:text="£050.00" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="Water" />
+
+                    <TextView
+                        android:text="10% off"
+                        />
+
+                    <TextView
+                        android:text="20/01/2020"
+                        android:layout_marginRight="30dp"/>
+
+                    <TextView android:text="£005.00" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="Internet" />
+
+                    <TextView android:text="n/a" />
+
+                    <TextView android:text="15/01/2020" />
+
+                    <TextView android:text="£020.00" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView />
+
+                    <TextView android:text="Total" />
+
+                    <TextView />
+
+                    <TextView android:text="£325.00" />
                 </TableRow>
 
 

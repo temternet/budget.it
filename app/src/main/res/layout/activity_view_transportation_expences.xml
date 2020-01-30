@@ -6,4 +6,123 @@
     android:layout_height="match_parent"
     tools:context=".ViewTransportationExpences">
 
-</android.support.constraint.ConstraintLayout>
+    <TableLayout
+        android:id="@+id/layout_livingExpenses"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <LinearLayout
+                android:id="@+id/titleBar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:background="#ffff2222"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:fontFamily="comic-sans"
+                    android:layout_marginRight="5dp"
+                    android:text="Paid So Far:"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/payment_rent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:fontFamily="comic-sans"
+                    android:text="£325.00"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:text="Back" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+            <TableLayout
+                android:id="@+id/item_listTitles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:stretchColumns="3">
+
+                <TableRow>
+
+                    <TextView android:text="Item"
+                        android:layout_marginRight="89dp"/>
+
+                    <TextView android:text="Modifier"
+                        android:layout_marginRight="45dp"/>
+
+                    <TextView android:text="Date Updated"
+                        android:layout_marginRight="30dp"/>
+
+                    <TextView android:text="Total" />
+                </TableRow>
+
+
+
+            </TableLayout>
+        </TableRow>
+
+        <TableRow>
+            <TableLayout
+                android:id="@+id/item_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:stretchColumns="3">
+
+                <TableRow>
+
+                    <TextView android:text="Rent" />
+
+                    <TextView android:text="n/a" />
+
+                    <TextView android:text="12/01/2020" />
+
+                    <TextView android:text="£250.00" />
+                </TableRow>
+
+
+        <TableRow>
+
+            <LinearLayout
+                android:id="@+id/item_info"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:gravity="left"
+
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="250dp" />
+
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
